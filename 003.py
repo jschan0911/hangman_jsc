@@ -15,7 +15,7 @@ while True:
     
     ans = input('Type the alphabet : ')
 
-     # If ans exists in hidden or tried_chars
+    # If ans exists in hidden or tried_chars
     if hidden.find(ans) != -1 or tried_chars.find(ans) != -1:   
         print('Please type another alphabet.') 
 
@@ -33,13 +33,8 @@ while True:
         try_count += 1
     
     print('=' * 30)
-
-    if point == len(word):
-        print(hidden)
-        print('Congratulation!')
-        break
     
-    if ans == word:
+    if ans == word or hidden == word:
         print(word)
         print('Congratulation!')
         break
